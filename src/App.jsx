@@ -1,8 +1,13 @@
+import { BrowserRouter, Route, Routes } from "react-router";
+import Home from "./pages/Home";
+
 const App = () => {
   return (
-    <div>
-      <h1 className="text-2xl">MK</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" index element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 

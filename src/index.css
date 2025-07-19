@@ -3,9 +3,32 @@
 @import "tailwindcss";
 
 @theme {
+  --color-accent-primary: #5a77ff;
+  --color-accent-secondary: #ffc593;
+  --color-accent-tertiary: #bc7198;
+  --color-grey-light: #dfdfdf;
+  --color-black: #000000;
+  --color-white-pure: #ffffff;
   --font-dm: "DM Sans", sans-serif;
 }
 
 body {
+  width: 100dvw;
   font-family: var(--font-dm);
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .col-center {
+    @apply flex flex-col items-center justify-center;
+  }
+}
+
+@layer components {
+  main {
+    @apply w-dvw overflow-x-hidden;
+  }
 }
