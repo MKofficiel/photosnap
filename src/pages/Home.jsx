@@ -1,9 +1,11 @@
 import NavBar from "../components/NavBar";
+import Hero from "../sections/Hero";
 
 const Home = () => {
   return (
-    <main>
+    <main className="overflow-hidden">
       <NavBar />
+      <Hero />
     </main>
   );
 };

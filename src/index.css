@@ -15,6 +15,7 @@
 body {
   width: 100dvw;
   font-family: var(--font-dm);
+  overflow-x: hidden;
 }
 
 @layer utilities {
@@ -22,8 +23,22 @@ body {
     @apply flex items-center justify-center;
   }
 
+  .custom-container {
+    @apply px-[165px] max-xl:px-[39px] max-md:px-6;
+  }
+  h1 {
+    @apply text-[32px] leading-[40px] font-bold tracking-[3.33px] uppercase md:text-[40px] md:leading-[48px] md:tracking-[4.17px];
+  }
+
+  p {
+    @apply text-[15px] leading-[25px] tracking-normal;
+  }
+
   .col-center {
     @apply flex flex-col items-center justify-center;
+  }
+  .custom-gradient {
+    background: linear-gradient(to top, #ffc593 0%, #bc7198 52%, #5a77ff 100%);
   }
 }
 

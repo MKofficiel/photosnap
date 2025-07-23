@@ -6,7 +6,7 @@ import clsx from "clsx";
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="w-full px-[165px] max-xl:px-[39px] max-md:px-6">
+    <header className="fixed top-0 left-0 z-60 w-full px-[165px] max-xl:px-[39px] max-md:px-6">
       <nav className="relative h-[72px] max-md:py-[28px]">
         <div className="flex h-full w-full items-center justify-between">
           {/* Logo */}
