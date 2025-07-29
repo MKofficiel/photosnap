@@ -23,13 +23,13 @@ body {
     @apply flex items-center justify-center;
   }
 
-  .custom-container {
-    @apply px-[165px] max-xl:px-[39px] max-md:px-6;
-  }
   h1 {
     @apply text-[32px] leading-[40px] font-bold tracking-[3.33px] uppercase md:text-[40px] md:leading-[48px] md:tracking-[4.17px];
   }
 
+  h3 {
+    @apply text-[18px] leading-[25px] font-bold tracking-normal;
+  }
   p {
     @apply text-[15px] leading-[25px] tracking-normal;
   }
@@ -39,6 +39,14 @@ body {
   }
   .custom-gradient {
     background: linear-gradient(to top, #ffc593 0%, #bc7198 52%, #5a77ff 100%);
+  }
+
+  .custom-gradient-secondary {
+    @apply bg-gradient-to-b from-black/0 to-black/70 mix-blend-multiply;
+  }
+
+  .custom-container {
+    @apply mx-auto max-w-[1200px] max-md:px-[40px];
   }
 }
 

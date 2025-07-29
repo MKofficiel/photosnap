@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import Button from "../components/Button";
 import ResponsiveImage from "../components/ResponsiveImage";
-import { heroContents } from "../constants";
+import { heroContents } from "../constants/index";
 
 const Hero = () => {
   return (

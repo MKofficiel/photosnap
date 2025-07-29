@@ -1,12 +1,29 @@
 import { Link } from "react-router";
-import { navLinks } from "../constants";
-import { useState } from "react";
+import { navLinks } from "../constants/index";
+import { useEffect, useState } from "react";
 import clsx from "clsx";
 
 const NavBar = () => {
+  const [hasScrolled, setHasScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setHasScrolled(window.scrollY > 32);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <header className="fixed top-0 left-0 z-60 w-full px-[165px] max-xl:px-[39px] max-md:px-6">
+    <header
+      className={clsx(
+        "fixed top-0 left-0 z-60 w-full px-[165px] transition-all duration-500 max-xl:px-[39px] max-md:px-6",
+        hasScrolled && "bg-white py-2 backdrop-blur-[8px]",
+      )}
+    >
       <nav className="relative h-[72px] max-md:py-[28px]">
         <div className="flex h-full w-full items-center justify-between">
           {/* Logo */}
@@ -33,7 +50,7 @@ const NavBar = () => {
           <div className="hidden justify-center md:flex">
             <ul className="flex items-center gap-[37px] max-md:flex-col">
               {navLinks
-                .filter((link) => !link.isCta)
+                .filter((link) => !link.isCta && link.label !== "home")
                 .map(({ label, path }) => (
                   <li key={label} className="group">
                     <Link
