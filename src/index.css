@@ -48,6 +48,9 @@ body {
   .custom-container {
     @apply mx-auto max-w-[1200px] max-md:px-[40px];
   }
+  .bg-stories-header {
+    @apply bg-cover bg-center bg-no-repeat md:bg-[url('../assets/stories/tablet/moon-of-appalacia.jpg')] lg:bg-[url('../assets/stories/desktop/moon-of-appalacia.jpg')];
+  }
 }
 
 @layer components {

@@ -38,7 +38,7 @@ const Hero = () => {
           );
 
           return (
-            <div key={id} className={gridClasses}>
+            <div key={id} className={clsx(gridClasses)}>
               {/* Texte box */}
               <div
                 className={clsx(

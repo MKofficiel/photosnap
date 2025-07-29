@@ -21,7 +21,7 @@ const NavBar = () => {
     <header
       className={clsx(
         "fixed top-0 left-0 z-60 w-full px-[165px] transition-all duration-500 max-xl:px-[39px] max-md:px-6",
-        hasScrolled && "bg-white py-2 backdrop-blur-[8px]",
+        hasScrolled && "bg-white py-2 backdrop-blur-[20px] shadow-md",
       )}
     >
       <nav className="relative h-[72px] max-md:py-[28px]">
