@@ -4,7 +4,7 @@ const StoriesCards = ({ story }) => {
   const {
     title,
     author,
-    cta: { label, icon, alt: ctaAlt },
+
     image: { desktop, alt: imageAlt },
   } = story;
 
@@ -23,10 +23,10 @@ const StoriesCards = ({ story }) => {
         </div>
         <div className="flex justify-between">
           <p className="text-[12px] font-bold tracking-[2px] uppercase">
-            {label}
+            Read story
           </p>
 
-          <img src={icon} alt={ctaAlt} />
+          <img src="/assets/shared/desktop/Arrowwhite.svg" alt="arrow" />
         </div>
       </div>
 
