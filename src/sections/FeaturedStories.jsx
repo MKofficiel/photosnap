@@ -6,7 +6,7 @@ const FeaturedStories = () => {
     <section className="">
       {/* C:\Users\DELL\Desktop\photosnap\public\assets\stories\desktop\18-days-voyage.jpg */}
       <div className="grid max-sm:grid-rows-4 md:grid-cols-2 lg:grid-cols-4">
-        {storyCards.map((story) => (
+        {storyCards.slice(0, 4).map((story) => (
           <StoriesCards key={story.title} story={story} />
         ))}
         {/* <figure className="flex h-[360px] cursor-pointer items-end bg-[url('/assets/stories/desktop/18-days-voyage.jpg')] bg-cover bg-center px-[40px] pb-[40px] transition-transform duration-300 hover:translate-y-[-2px]">

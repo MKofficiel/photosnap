@@ -77,13 +77,89 @@ export const heroContents = [
 export const storyCards = [
   {
     date: "April 16th 2020",
-    title: "The Mountains",
-    author: "John Appleseed",
-    cta: {
-      label: "Ready story",
-      icon: "/assets/shared/desktop/Arrowwhite.svg",
-      alt: "arrow icon",
+    title: "18 Days Voyage",
+    author: "by Alexei Borodin",
+    image: {
+      desktop: "/assets/stories/desktop/18-days-voyage.jpg",
+      mobile: "/assets/stories/mobile/18-days-voyage.jpg",
+      alt: "18 Days Voyage",
     },
+  },
+
+  {
+    date: "April 9th 2020",
+    title: "Calm Waters",
+    author: "by Samantha Brooke",
+    image: {
+      desktop: "/assets/stories/desktop/calm-waters.jpg",
+      mobile: "/assets/stories/mobile/calm-waters.jpg",
+      alt: "Calm Waters",
+    },
+  },
+  {
+    date: "April 7th 2020",
+    title: "Cityscapes",
+    author: "by Timothy Wagner",
+    image: {
+      desktop: "/assets/stories/desktop/cityscapes.jpg",
+      mobile: "/assets/stories/mobile/cityscapes.jpg",
+      alt: "Cityscapes",
+    },
+  },
+  {
+    date: "April 5th 2020",
+    title: "Dark Forest",
+    author: "by William Malcolm",
+    image: {
+      desktop: "/assets/stories/desktop/dark-forest.jpg",
+      mobile: "/assets/stories/mobile/dark-forest.jpg",
+      alt: "Dark Forest",
+    },
+  },
+  {
+    date: "April 3rd 2020",
+    title: "King on Africa",
+    author: "by Tim Hillenburg",
+    image: {
+      desktop: "/assets/stories/desktop/king-on-africa.jpg",
+      mobile: "/assets/stories/mobile/king-on-africa.jpg",
+      alt: "King on Africa",
+    },
+  },
+  {
+    date: "April 1st 2020",
+    title: "Land of Dreams",
+    author: "by William Malcolm",
+    image: {
+      desktop: "/assets/stories/desktop/land-of-dreams.jpg",
+      mobile: "/assets/stories/mobile/land-of-dreams.jpg",
+      alt: "Land of Dreams",
+    },
+  },
+  {
+    date: "March 30th 2020",
+    title: "Milky Way",
+    author: "by Benjamin Cruz",
+    image: {
+      desktop: "/assets/stories/desktop/milky-way.jpg",
+      mobile: "/assets/stories/mobile/milky-way.jpg",
+      alt: "Milky Way",
+    },
+  },
+  {
+    date: "March 28th 2020",
+    title: "Moon of Appalachia",
+    author: "by John Appleseed",
+    image: {
+      desktop: "/assets/stories/desktop/moon-of-appalacia.jpg",
+      mobile: "/assets/stories/mobile/moon-of-appalacia.jpg",
+      alt: "Moon of Appalachia",
+    },
+  },
+  {
+    date: "March 26th 2020",
+    title: "Mountains",
+    author: "by John Appleseed",
     image: {
       desktop: "/assets/stories/desktop/mountains.jpg",
       mobile: "/assets/stories/mobile/mountains.jpg",
@@ -91,48 +167,83 @@ export const storyCards = [
     },
   },
   {
-    date: "April 14th 2020",
-    title: "Sunset City",
-    author: "Jane Doe",
-    cta: {
-      label: "Ready story",
-      icon: "/assets/shared/desktop/Arrowwhite.svg",
-      alt: "arrow icon",
-    },
+    date: "March 24th 2020",
+    title: "Rage of the Sea",
+    author: "by Samantha Brooke",
     image: {
-      desktop: "/assets/stories/desktop/cityscapes.jpg",
-      mobile: "/assets/stories/mobile/mountains.jpg",
-      alt: "Sunset Cityscapes",
+      desktop: "/assets/stories/desktop/rage-of-the-sea.jpg",
+      mobile: "/assets/stories/mobile/rage-of-the-sea.jpg",
+      alt: "Rage of the Sea",
     },
   },
   {
-    date: "April 11th 2020",
-    title: "18 Days Voyage",
-    author: "by Alexei Borodin",
-    cta: {
-      label: "Ready story",
-      icon: "/assets/shared/desktop/Arrowwhite.svg",
-      alt: "arrow icon",
-    },
+    date: "March 22nd 2020",
+    title: "Running Free",
+    author: "by Timothy Wagner",
     image: {
-      desktop: "/assets/stories/desktop/18-days-voyage.jpg",
-      mobile: "/assets/stories/mobile/mountains.jpg",
-      alt: "18 Days Voyage",
+      desktop: "/assets/stories/desktop/running-free.jpg",
+      mobile: "/assets/stories/mobile/running-free.jpg",
+      alt: "Running Free",
     },
   },
   {
-    date: "April 14th 2020",
+    date: "March 20th 2020",
+    title: "Somwarpet’s Beauty",
+    author: "by Benjamin Cruz",
+    image: {
+      desktop: "/assets/stories/desktop/somwarpet.jpg",
+      mobile: "/assets/stories/mobile/somwarpet.jpg",
+      alt: "Somwarpet’s Beauty",
+    },
+  },
+  {
+    date: "March 18th 2020",
+    title: "Trip to Nowhere",
+    author: "by Samantha Brooke",
+    image: {
+      desktop: "/assets/stories/desktop/trip-to-nowhere.jpg",
+      mobile: "/assets/stories/mobile/trip-to-nowhere.jpg",
+      alt: "Trip to Nowhere",
+    },
+  },
+  {
+    date: "March 16th 2020",
+    title: "Unforeseen Corners",
+    author: "by William Malcolm",
+    image: {
+      desktop: "/assets/stories/desktop/unforeseen-corners.jpg",
+      mobile: "/assets/stories/mobile/unforeseen-corners.jpg",
+      alt: "Unforeseen Corners",
+    },
+  },
+  {
+    date: "March 14th 2020",
+    title: "World Tour 2019",
+    author: "by Timothy Wagner",
+    image: {
+      desktop: "/assets/stories/desktop/world-tour.jpg",
+      mobile: "/assets/stories/mobile/world-tour.jpg",
+      alt: "World Tour 2019",
+    },
+  },
+  // {
+  //   date: "March 16th 2020",
+  //   title: "Unforeseen Corners",
+  //   author: "by William Malcolm",
+  //   image: {
+  //     desktop: "/assets/stories/desktop/unforeseen-corners.jpg",
+  //     mobile: "/assets/stories/mobile/unforeseen-corners.jpg",
+  //     alt: "Unforeseen Corners",
+  //   },
+  // },
+  {
+    date: "March 14th 2020",
     title: "Architecturals",
     author: "by Samantha Brooke",
-    cta: {
-      label: "Ready story",
-      icon: "/assets/shared/desktop/Arrowwhite.svg",
-      alt: "arrow icon",
-    },
     image: {
       desktop: "/assets/stories/desktop/architecturals.jpg",
-      mobile: "/assets/stories/mobile/mountains.jpg",
-      alt: "The Mountains",
+      mobile: "/assets/stories/mobile/architecturals.jpg",
+      alt: "World Tour 2019",
     },
   },
 ];
