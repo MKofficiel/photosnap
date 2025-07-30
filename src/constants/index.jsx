@@ -60,7 +60,6 @@ export const heroContents = [
     buttonVariant: "secondary",
     buttonIcon: "/assets/shared/desktop/arrow.svg",
     image: {
-      // public\assets\home\desktop\designed-for-everyone.jpg
       desktop: "/assets/home/desktop/designed-for-everyone.jpg",
       tablet: "/assets/home/tablet/designed-for-everyone.jpg",
       mobile: "/assets/home/mobile/designed-for-everyone.jpg",
@@ -226,16 +225,7 @@ export const storyCards = [
       alt: "World Tour 2019",
     },
   },
-  // {
-  //   date: "March 16th 2020",
-  //   title: "Unforeseen Corners",
-  //   author: "by William Malcolm",
-  //   image: {
-  //     desktop: "/assets/stories/desktop/unforeseen-corners.jpg",
-  //     mobile: "/assets/stories/mobile/unforeseen-corners.jpg",
-  //     alt: "Unforeseen Corners",
-  //   },
-  // },
+
   {
     date: "March 14th 2020",
     title: "Architecturals",
@@ -266,6 +256,24 @@ export const featuresHome = [
     title: "Available to Embed",
     description:
       "Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more.",
+  },
+  {
+    icon: "/assets/features/desktop/custom-domain.svg",
+    title: "Custom Domain",
+    description:
+      "With Photosnap subscriptions you can host your stories on your own domain. You can also remove our branding!",
+  },
+  {
+    icon: "/assets/features/desktop/boost-exposure.svg",
+    title: "Boost Your Exposure",
+    description:
+      "Users that viewed your story or gallery can easily get notifed of new and featured stories with our built in mailing list.",
+  },
+  {
+    icon: "/assets/features/desktop/drag-drop.svg",
+    title: "Drag & Drop Image",
+    description:
+      "Easily drag and drop your image and get beautiful shots everytime. No over the top tooling to add friction to creating stories.",
   },
 ];
 

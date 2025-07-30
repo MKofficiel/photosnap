@@ -5,7 +5,7 @@ export default function ResponsiveImage({
   tabletSrc,
   desktopSrc,
   alt,
-  className,
+  className = "w-full object-cover h-full",
 }) {
   const screen = useResponsiveImage();
 
