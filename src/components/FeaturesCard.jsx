@@ -1,11 +1,13 @@
 const FeaturesCard = ({ title, icon, description }) => {
   return (
-    <div className="h-full">
+    <div>
       <div className="flex h-full flex-col items-center justify-center gap-[48px]">
-        <img src={icon} alt={`${title} icon`} />
+        <div className="">
+          <img src={icon} alt={`${title} icon`} />
+        </div>
 
-        <div className="flex flex-1 items-end text-center">
-          <div className="max-lg:max-w-[350px]">
+        <div className="mt-auto flex flex-1 items-end text-center">
+          <div className="md:max-w-[339px]">
             <h3 className="mb-4">{title}</h3>
             <p>{description}</p>
           </div>

@@ -7,7 +7,7 @@ const Features = () => {
       {/* <div className="container bg-red-200"> */}
       <div className="custom-container">
         <div className="grid grid-cols-1 max-lg:gap-y-[80px] max-md:gap-y-[56px] lg:grid-cols-3">
-          {featuresHome.map((feature) => (
+          {featuresHome.slice(0, 3).map((feature) => (
             <FeaturesCard key={feature.title} {...feature} />
           ))}
         </div>

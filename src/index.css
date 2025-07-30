@@ -44,9 +44,12 @@ body {
   .custom-gradient-secondary {
     @apply bg-gradient-to-b from-black/0 to-black/70 mix-blend-multiply;
   }
+  .gradient-main {
+    background: linear-gradient(to top, #ffc593 0%, #bc7198 52%, #5a77ff 100%);
+  }
 
   .custom-container {
-    @apply mx-auto max-w-[1200px] max-md:px-[40px];
+    @apply mx-auto max-w-[1200px];
   }
   .bg-stories-header {
     @apply bg-cover bg-center bg-no-repeat md:bg-[url('../assets/stories/tablet/moon-of-appalacia.jpg')] lg:bg-[url('../assets/stories/desktop/moon-of-appalacia.jpg')];
@@ -56,5 +59,13 @@ body {
 @layer components {
   main {
     @apply w-dvw overflow-x-hidden;
+  }
+  .bg-gradient-1 {
+    /* background: linear-gradient(to top, #ffc593 0%, #bc7198 52%, #5a77ff 100%); */
+    @apply absolute h-[6px] w-[128px] lg:hidden;
+  }
+  .bg-cta {
+    /* public/assets/shared/desktop/bg-beta.jpg */
+    @apply bg-[url('/assets/shared/desktop/bg-beta.jpg')] bg-cover bg-center md:bg-[url('/assets/shared/desktop/bg-beta.jpg')] lg:bg-[url('/assets/shared/desktop/bg-beta.jpg')];
   }
 }
