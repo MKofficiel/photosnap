@@ -23,6 +23,10 @@ body {
     @apply flex items-center justify-center;
   }
 
+  .header-features {
+    @apply text-[12px] font-bold tracking-[2px] uppercase;
+  }
+
   h1 {
     @apply text-[32px] leading-[40px] font-bold tracking-[3.33px] uppercase md:text-[40px] md:leading-[48px] md:tracking-[4.17px];
   }
@@ -44,7 +48,7 @@ body {
   .custom-gradient-secondary {
     @apply bg-gradient-to-b from-black/0 to-black/70 mix-blend-multiply;
   }
-  .gradient-main {
+  .bg-gradient-main {
     background: linear-gradient(to top, #ffc593 0%, #bc7198 52%, #5a77ff 100%);
   }
 
@@ -67,5 +71,8 @@ body {
   .bg-cta {
     /* public/assets/shared/desktop/bg-beta.jpg */
     @apply bg-[url('/assets/shared/desktop/bg-beta.jpg')] bg-cover bg-center md:bg-[url('/assets/shared/desktop/bg-beta.jpg')] lg:bg-[url('/assets/shared/desktop/bg-beta.jpg')];
+  }
+  .mon-gradient {
+    @apply absolute md:bottom-0 md:left-0 md:h-full md:w-[6px] lg:top-0 lg:h-[6px] lg:w-full;
   }
 }
