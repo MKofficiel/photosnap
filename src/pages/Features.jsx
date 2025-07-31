@@ -1,13 +1,15 @@
 import NavBar from "../components/NavBar";
+import PagesHeader from "../components/PagesHeader";
+import { pageHeaders } from "../constants";
 import CTA from "../sections/CTA.JSX";
 import FeaturesGrid from "../sections/FeaturesGrid";
-import FeaturesHeader from "../sections/FeaturesHeader";
 
 const Features = () => {
   return (
     <main>
       <NavBar />
-      <FeaturesHeader />
+      {/* <FeaturesHeader /> */}
+      <PagesHeader data={pageHeaders.features} />
       <FeaturesGrid />
       <CTA />
     </main>

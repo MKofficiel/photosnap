@@ -386,3 +386,86 @@ export const iconsSocials = [
     ),
   },
 ];
+
+export const pageHeaders = {
+  features: {
+    title: "Features",
+    description:
+      "We make sure all of our features are designed to be loved by every aspiring and even professional photograpers who wanted to share their stories.",
+    images: {
+      mobile: "/assets/features/mobile/hero.jpg",
+      tablet: "/assets/features/tablet/hero.jpg",
+      desktop: "/assets/features/desktop/hero.jpg",
+    },
+  },
+
+  pricing: {
+    title: "Pricing",
+    description:
+      "Create stories, Photosnap is a platform for photographers and visual storytellers. It’s the simple way to create and share your photos.",
+    images: {
+      mobile: "/assets/pricing/mobile/hero.jpg",
+      tablet: "/assets/pricing/tablet/hero.jpg",
+      desktop: "/assets/pricing/desktop/hero.jpg",
+    },
+  },
+};
+
+export const pricingPlans = [
+  {
+    name: "Basic",
+    description:
+      "Includes basic usage of our platform. Recommended for new and aspiring photographers.",
+    priceMonthly: 19,
+    priceYearly: 190,
+  },
+  {
+    name: "Pro",
+    description:
+      "More advanced features available. Recommended for photography veterans and professionals.",
+    priceMonthly: 39,
+    priceYearly: 390,
+  },
+  {
+    name: "Business",
+    description:
+      "Additional features available such as more detailed metrics. Recommended for business owners.",
+    priceMonthly: 99,
+    priceYearly: 990,
+  },
+];
+
+export const Planfeatures = [
+  {
+    name: "Unlimited Story Posting",
+    available: [true, true, true], // Basic, Pro, Business
+  },
+  {
+    name: "Unlimited Photo Upload",
+    available: [true, true, true],
+  },
+  {
+    name: "Embedding Custom Content",
+    available: [false, true, true],
+  },
+  {
+    name: "Customize Metadata",
+    available: [false, true, true],
+  },
+  {
+    name: "Advanced Metrics",
+    available: [false, false, true],
+  },
+  {
+    name: "Photo Downloads",
+    available: [false, false, true],
+  },
+  {
+    name: "Search Engine Indexing",
+    available: [false, false, true],
+  },
+  {
+    name: "Custom Analytics",
+    available: [false, false, true],
+  },
+];
