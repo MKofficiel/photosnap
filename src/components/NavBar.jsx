@@ -36,7 +36,7 @@ const NavBar = () => {
           {/* MENU MOBILE ICON */}
 
           <button
-            className="md:hidden"
+            className="flex w-[30px] items-center justify-center py-4 md:hidden"
             onClick={() => setIsOpen((prevState) => !prevState)}
           >
             <img
