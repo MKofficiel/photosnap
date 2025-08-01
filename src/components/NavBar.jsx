@@ -100,7 +100,7 @@ const NavBar = () => {
                         ? "bg-black px-6 py-3 text-center text-white hover:bg-gray-800"
                         : "py-2 text-black",
                     )}
-                    onClick={() => setIsOpen(false)} // ferme le menu après clic
+                    onClick={() => setIsOpen(false)}
                   >
                     {label}
                   </Link>
