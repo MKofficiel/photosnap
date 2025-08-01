@@ -1,6 +1,6 @@
 import PagesHeader from "../components/PagesHeader";
 import { pageHeaders } from "../constants";
-import CTA from "../sections/CTA";
+import CTA from "../sections/CTA.jsx";
 
 import FeaturesGrid from "../sections/FeaturesGrid";
 
