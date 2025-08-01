@@ -285,8 +285,8 @@ export const iconsSocials = [
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
         <defs>
           <linearGradient id="grad1" x1="100%" x2="0%" y1="0%" y2="100%">
-            <stop offset="0%" stop-color="#63AFDB" />
-            <stop offset="100%" stop-color="#6028F1" />
+            <stop offset="0%" stopColor="#63AFDB" />
+            <stop offset="100%" stopColor="#6028F1" />
           </linearGradient>
         </defs>
         <path
@@ -304,8 +304,8 @@ export const iconsSocials = [
       <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20">
         <defs>
           <linearGradient id="grad2" x1="0%" x2="100%" y1="100%" y2="0%">
-            <stop offset="0%" stop-color="#D3205A" />
-            <stop offset="100%" stop-color="#FF5A5A" />
+            <stop offset="0%" stopColor="#D3205A" />
+            <stop offset="100%" stopColor="#FF5A5A" />
           </linearGradient>
         </defs>
         <path
@@ -330,8 +330,8 @@ export const iconsSocials = [
             y1="16.979%"
             y2="83.021%"
           >
-            <stop offset="0%" stop-color="#65FFEB" />
-            <stop offset="100%" stop-color="#27718A" />
+            <stop offset="0%" stopColor="#65FFEB" />
+            <stop offset="100%" stopColor="#27718A" />
           </linearGradient>
         </defs>
         <path
@@ -350,8 +350,8 @@ export const iconsSocials = [
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
         <defs>
           <linearGradient id="grad4" x1="100%" x2="0%" y1="0%" y2="100%">
-            <stop offset="0%" stop-color="#F6C683" />
-            <stop offset="100%" stop-color="#DE3838" />
+            <stop offset="0%" stopColor="#F6C683" />
+            <stop offset="100%" stopColor="#DE3838" />
           </linearGradient>
         </defs>
         <path
@@ -371,9 +371,9 @@ export const iconsSocials = [
       <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20">
         <defs>
           <linearGradient id="grad5" x1="0%" x2="50%" y1="100%" y2="0%">
-            <stop offset="0%" stop-color="#FFC593" />
-            <stop offset="51.945%" stop-color="#BC7198" />
-            <stop offset="100%" stop-color="#5A77FF" />
+            <stop offset="0%" stopColor="#FFC593" />
+            <stop offset="51.945%" stopColor="#BC7198" />
+            <stop offset="100%" stopColor="#5A77FF" />
           </linearGradient>
         </defs>
         <path
@@ -396,6 +396,7 @@ export const pageHeaders = {
       mobile: "/assets/features/mobile/hero.jpg",
       tablet: "/assets/features/tablet/hero.jpg",
       desktop: "/assets/features/desktop/hero.jpg",
+      alt: "hero image",
     },
   },
 
@@ -437,34 +438,38 @@ export const pricingPlans = [
 
 export const Planfeatures = [
   {
+    id: "001",
     name: "Unlimited Story Posting",
     available: [true, true, true], // Basic, Pro, Business
   },
   {
+    id: "002",
     name: "Unlimited Photo Upload",
     available: [true, true, true],
   },
   {
+    id: "003",
     name: "Embedding Custom Content",
     available: [false, true, true],
   },
+  { id: "008", name: "Customize Metadata", available: [false, true, true] },
   {
-    name: "Customize Metadata",
-    available: [false, true, true],
-  },
-  {
+    id: "004",
     name: "Advanced Metrics",
     available: [false, false, true],
   },
   {
+    id: "005",
     name: "Photo Downloads",
     available: [false, false, true],
   },
   {
+    id: "006",
     name: "Search Engine Indexing",
     available: [false, false, true],
   },
   {
+    id: "007",
     name: "Custom Analytics",
     available: [false, false, true],
   },

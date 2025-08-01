@@ -16,8 +16,6 @@ const Hero = () => {
             buttonVariant,
             buttonIcon,
             image,
-
-            gradient,
           },
           index,
         ) => {
@@ -85,14 +83,6 @@ const Hero = () => {
                   alt={image.alt}
                   className="h-full w-full object-cover"
                 />
-                {gradient && (
-                  <div
-                    className={clsx(
-                      "pointer-events-none absolute inset-0",
-                      gradient,
-                    )}
-                  />
-                )}
               </div>
             </div>
           );

@@ -8,8 +8,6 @@ const StoriesCards = ({ story }) => {
     image: { desktop, alt: imageAlt },
   } = story;
 
-  console.log(desktop);
-
   return (
     <figure
       className={clsx(

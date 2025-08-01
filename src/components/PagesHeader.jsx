@@ -4,13 +4,14 @@ const PagesHeader = ({ data }) => {
   const { images, title, description } = data;
   return (
     <section className="pt-[72px]">
-      <div className="border">
+      <div>
         <div className="grid grid-cols-1 bg-black md:grid-cols-[1fr_43%] md:items-center lg:grid-cols-[43%_1fr]">
           <div className="max-md:after-gradient relative">
             <ResponsiveImage
               mobileSrc={images.mobile}
               tabletSrc={images.tablet}
               desktopSrc={images.desktop}
+              alt={images.alt}
             />
           </div>
 

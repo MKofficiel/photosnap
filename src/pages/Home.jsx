@@ -1,5 +1,6 @@
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
+import PageWrapper from "../components/PageWrapper";
 import FeaturedStories from "../sections/FeaturedStories";
 import Features from "../sections/Features";
 import Hero from "../sections/Hero";
@@ -7,11 +8,13 @@ import Hero from "../sections/Hero";
 const Home = () => {
   return (
     <main className="overflow-hidden">
-      <NavBar />
-      <Hero />
-      <FeaturedStories />
-      <Features />
-      <Footer />
+      <PageWrapper>
+        <NavBar />
+        <Hero />
+        <FeaturedStories />
+        <Features />
+        <Footer />
+      </PageWrapper>
     </main>
   );
 };
