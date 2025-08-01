@@ -16,6 +16,7 @@ body {
   width: 100dvw;
   font-family: var(--font-dm);
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 @layer utilities {

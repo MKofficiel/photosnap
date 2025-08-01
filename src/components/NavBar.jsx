@@ -20,8 +20,8 @@ const NavBar = () => {
   return (
     <header
       className={clsx(
-        "fixed top-0 left-0 z-60 w-full px-[165px] transition-all duration-500 max-xl:px-[39px] max-md:px-6",
-        hasScrolled && "bg-white py-2 backdrop-blur-[20px] shadow-md",
+        "fixed top-0 left-0 z-100 w-full bg-white px-[165px] transition-all duration-500 max-xl:px-[39px] max-md:px-6",
+        hasScrolled && "py-2 shadow-md",
       )}
     >
       <nav className="relative h-[72px] max-md:py-[28px]">
@@ -83,24 +83,29 @@ const NavBar = () => {
       </nav>
       {/* NAV MOBILE */}
       {isOpen && (
-        <div className="absolute top-[72px] left-0 z-50 w-full py-4 shadow-md md:hidden">
+        <div className="absolute top-[72px] left-0 z-50 w-full bg-white py-4 shadow-md md:hidden">
           <ul className="flex flex-col items-center gap-4 px-6">
-            {navLinks.map(({ label, path, isCta }) => (
-              <li key={label} className={clsx(isCta && "w-full")}>
-                <Link
-                  to={path}
-                  className={clsx(
-                    "block text-[12px] font-bold tracking-[2px] uppercase",
-                    isCta
-                      ? "bg-black px-6 py-3 text-center text-white hover:bg-gray-800"
-                      : "py-2 text-black",
-                  )}
-                  onClick={() => setIsOpen(false)} // ferme le menu après clic
+            {navLinks
+              .filter((link) => link.label !== "home")
+              .map(({ label, path, isCta }) => (
+                <li
+                  key={label}
+                  className={clsx(isCta && "w-full border-t last:pt-[20px]")}
                 >
-                  {label}
-                </Link>
-              </li>
-            ))}
+                  <Link
+                    to={path}
+                    className={clsx(
+                      "block text-[12px] font-bold tracking-[2px] uppercase",
+                      isCta
+                        ? "bg-black px-6 py-3 text-center text-white hover:bg-gray-800"
+                        : "py-2 text-black",
+                    )}
+                    onClick={() => setIsOpen(false)} // ferme le menu après clic
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
           </ul>
         </div>
       )}
